@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8D-1j-Gpy">
+                                <rect key="frame" x="72" y="245" width="30" height="30"/>
+                                <state key="normal" title="ON"/>
+                                <connections>
+                                    <action selector="gardenON:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8M-PK-2bm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Agp-4l-RDl">
+                                <rect key="frame" x="172" y="245" width="30" height="30"/>
+                                <state key="normal" title="OFF"/>
+                                <connections>
+                                    <action selector="gardenOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2mz-Pv-gAV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBU-GG-Clp">
+                                <rect key="frame" x="72.666666666666671" y="356" width="30" height="30"/>
+                                <state key="normal" title="ON"/>
+                                <connections>
+                                    <action selector="houseWallOn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NzG-KU-RIa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Jj-UT-WRG">
+                                <rect key="frame" x="255" y="356" width="60" height="30"/>
+                                <state key="normal" title="TOGGLE"/>
+                                <connections>
+                                    <action selector="houseWallToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q6h-ox-jao"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cwZ-Ra-BNA">
+                                <rect key="frame" x="172.66666666666666" y="356" width="30" height="30"/>
+                                <state key="normal" title="OFF"/>
+                                <connections>
+                                    <action selector="houseWallOff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkJ-7F-Mxe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garden Lights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qy6-vy-b9K">
+                                <rect key="frame" x="133" y="194" width="108" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Wall Lights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3E-3w-kRe">
+                                <rect key="frame" x="119" y="305" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wz5-QK-0Pj">
+                                <rect key="frame" x="262" y="245" width="60" height="30"/>
+                                <state key="normal" title="TOGGLE"/>
+                                <connections>
+                                    <action selector="gardenToggle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3z7-JI-f4s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzO-9V-1ab">
+                                <rect key="frame" x="150" y="486" width="74" height="30"/>
+                                <state key="normal" title="Reconnect"/>
+                                <connections>
+                                    <action selector="reconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5Z-DO-OFE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wz5-QK-0Pj" firstAttribute="centerY" secondItem="Agp-4l-RDl" secondAttribute="centerY" id="BQW-x0-LXs"/>
+                            <constraint firstItem="Agp-4l-RDl" firstAttribute="top" secondItem="Qy6-vy-b9K" secondAttribute="bottom" constant="30" id="CAU-EW-T0b"/>
+                            <constraint firstItem="s3E-3w-kRe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hii-cv-Wzk"/>
+                            <constraint firstItem="cwZ-Ra-BNA" firstAttribute="leading" secondItem="gBU-GG-Clp" secondAttribute="trailing" constant="70" id="IZJ-Bs-ZRt"/>
+                            <constraint firstItem="wzO-9V-1ab" firstAttribute="top" secondItem="cwZ-Ra-BNA" secondAttribute="bottom" constant="100" id="NYh-ec-U66"/>
+                            <constraint firstItem="Agp-4l-RDl" firstAttribute="leading" secondItem="D8D-1j-Gpy" secondAttribute="trailing" constant="70" id="RFf-rm-XBg"/>
+                            <constraint firstItem="s3E-3w-kRe" firstAttribute="top" secondItem="Agp-4l-RDl" secondAttribute="bottom" constant="30" id="VmB-gs-XaP"/>
+                            <constraint firstItem="Wz5-QK-0Pj" firstAttribute="leading" secondItem="Agp-4l-RDl" secondAttribute="trailing" constant="60" id="YKL-L2-vaF"/>
+                            <constraint firstItem="Agp-4l-RDl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZjU-C7-6zm"/>
+                            <constraint firstItem="wzO-9V-1ab" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="adB-DS-FHv"/>
+                            <constraint firstItem="8Jj-UT-WRG" firstAttribute="centerY" secondItem="cwZ-Ra-BNA" secondAttribute="centerY" id="hcy-VK-HOR"/>
+                            <constraint firstItem="cwZ-Ra-BNA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lbY-TY-loI"/>
+                            <constraint firstItem="Qy6-vy-b9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mWj-6a-SP2"/>
+                            <constraint firstItem="cwZ-Ra-BNA" firstAttribute="top" secondItem="s3E-3w-kRe" secondAttribute="bottom" constant="30" id="poG-VV-nAg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Jj-UT-WRG" secondAttribute="trailing" constant="60" id="uKb-tN-ps1"/>
+                            <constraint firstItem="Qy6-vy-b9K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="weP-3o-OjA"/>
+                            <constraint firstItem="gBU-GG-Clp" firstAttribute="centerY" secondItem="cwZ-Ra-BNA" secondAttribute="centerY" id="wg3-9F-Qf1"/>
+                            <constraint firstItem="D8D-1j-Gpy" firstAttribute="centerY" secondItem="Agp-4l-RDl" secondAttribute="centerY" id="zg8-Js-bCg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
