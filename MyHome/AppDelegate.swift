@@ -9,13 +9,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         return true
     }
-
+	
+	func applicationDidBecomeActive(_ application: UIApplication) {
+		_ = MQTT.client.connect()
+	}
+	
     func applicationDidEnterBackground(_ application: UIApplication) {
         MQTT.client.disconnect()
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-        _ = MQTT.client.connect()
     }
 }
 
