@@ -11,11 +11,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        mqttClient.disconnect()
+        MQTT.client.disconnect()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
-        mqttClient.connect()
+        _ = MQTT.client.connect()
     }
 }
 

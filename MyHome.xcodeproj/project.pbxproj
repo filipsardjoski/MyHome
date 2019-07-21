@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE3F2E1E22E4F0270030EDD1 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F2E1D22E4F0270030EDD1 /* MQTTManager.swift */; };
 		DE7B3F3220814D3800548E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B3F3120814D3800548E87 /* AppDelegate.swift */; };
 		DE7B3F3420814D3800548E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B3F3320814D3800548E87 /* ViewController.swift */; };
 		DE7B3F3720814D3800548E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7B3F3520814D3800548E87 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		07F6496FC97974698CD0F686 /* Pods_MyHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172C3530EB94D0311DED3113 /* Pods-MyHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyHome/Pods-MyHome.release.xcconfig"; sourceTree = "<group>"; };
 		8209C4CAF1C6BB1C40AA831A /* Pods-MyHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyHome/Pods-MyHome.debug.xcconfig"; sourceTree = "<group>"; };
+		DE3F2E1D22E4F0270030EDD1 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
 		DE7B3F2E20814D3800548E87 /* MyHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7B3F3120814D3800548E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE7B3F3320814D3800548E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			children = (
 				DE7B3F3120814D3800548E87 /* AppDelegate.swift */,
 				DE7B3F3320814D3800548E87 /* ViewController.swift */,
+				DE3F2E1D22E4F0270030EDD1 /* MQTTManager.swift */,
 				DE7B3F3520814D3800548E87 /* Main.storyboard */,
 				DE7B3F3820814D3800548E87 /* Assets.xcassets */,
 				DE7B3F3A20814D3800548E87 /* LaunchScreen.storyboard */,
@@ -104,7 +107,6 @@
 				DE7B3F2B20814D3800548E87 /* Frameworks */,
 				DE7B3F2C20814D3800548E87 /* Resources */,
 				CA146AEEC9A6079FC8D19F0D /* [CP] Embed Pods Frameworks */,
-				535642954930DF25AEAB9D59 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,41 +165,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		535642954930DF25AEAB9D59 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyHome/Pods-MyHome-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CA146AEEC9A6079FC8D19F0D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MyHome/Pods-MyHome-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MyHome/Pods-MyHome-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaMQTT/CocoaMQTT.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaMQTT.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyHome/Pods-MyHome-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyHome/Pods-MyHome-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F60A93EAE81FCB7CE532D3FB /* [CP] Check Pods Manifest.lock */ = {
@@ -226,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE7B3F3420814D3800548E87 /* ViewController.swift in Sources */,
+				DE3F2E1E22E4F0270030EDD1 /* MQTTManager.swift in Sources */,
 				DE7B3F3220814D3800548E87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

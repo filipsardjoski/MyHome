@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E720309E6F5A1C69F6C3B3230A0C7B1D"
+               BlueprintIdentifier = "4EB168A830EFA6136FA93357D1F1511A"
+               BuildableName = "CocoaMQTT.framework"
                BlueprintName = "CocoaMQTT"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "CocoaMQTT.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
