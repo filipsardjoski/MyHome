@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		DE3F2E1E22E4F0270030EDD1 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3F2E1D22E4F0270030EDD1 /* MQTTManager.swift */; };
+		DE47B6C922E792A400960214 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE47B6C722E792A400960214 /* Interface.storyboard */; };
+		DE47B6CB22E792A500960214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE47B6CA22E792A500960214 /* Assets.xcassets */; };
+		DE47B6D222E792A500960214 /* MyHomeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE47B6D122E792A500960214 /* MyHomeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE47B6D722E792A500960214 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47B6D622E792A500960214 /* InterfaceController.swift */; };
+		DE47B6D922E792A500960214 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47B6D822E792A500960214 /* ExtensionDelegate.swift */; };
+		DE47B6DB22E792A500960214 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47B6DA22E792A500960214 /* NotificationController.swift */; };
+		DE47B6DD22E792A600960214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE47B6DC22E792A600960214 /* Assets.xcassets */; };
+		DE47B6E222E792A600960214 /* MyHomeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DE47B6C522E792A300960214 /* MyHomeWatch.app */; };
+		DE47B6EE22E7945F00960214 /* LightMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47B6ED22E7945F00960214 /* LightMQTT.swift */; };
+		DE47B6F022E794AB00960214 /* MQTTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE47B6EF22E794AB00960214 /* MQTTManager.swift */; };
 		DE7B3F3220814D3800548E87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B3F3120814D3800548E87 /* AppDelegate.swift */; };
 		DE7B3F3420814D3800548E87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B3F3320814D3800548E87 /* ViewController.swift */; };
 		DE7B3F3720814D3800548E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7B3F3520814D3800548E87 /* Main.storyboard */; };
@@ -16,11 +26,66 @@
 		DEDBE3D9208162A000C9046B /* Pods_MyHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDBE3D8208162A000C9046B /* Pods_MyHome.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DE47B6D322E792A500960214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7B3F2620814D3700548E87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE47B6D022E792A500960214;
+			remoteInfo = "MyHomeWatch Extension";
+		};
+		DE47B6E022E792A600960214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7B3F2620814D3700548E87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE47B6C422E792A300960214;
+			remoteInfo = MyHomeWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE47B6E822E792A600960214 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DE47B6D222E792A500960214 /* MyHomeWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE47B6EA22E792A600960214 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DE47B6E222E792A600960214 /* MyHomeWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		07F6496FC97974698CD0F686 /* Pods_MyHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		172C3530EB94D0311DED3113 /* Pods-MyHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyHome/Pods-MyHome.release.xcconfig"; sourceTree = "<group>"; };
 		8209C4CAF1C6BB1C40AA831A /* Pods-MyHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyHome/Pods-MyHome.debug.xcconfig"; sourceTree = "<group>"; };
 		DE3F2E1D22E4F0270030EDD1 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
+		DE47B6C522E792A300960214 /* MyHomeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHomeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE47B6C822E792A400960214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DE47B6CA22E792A500960214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE47B6CC22E792A500960214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE47B6D122E792A500960214 /* MyHomeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MyHomeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE47B6D622E792A500960214 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DE47B6D822E792A500960214 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DE47B6DA22E792A500960214 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DE47B6DC22E792A600960214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE47B6DE22E792A600960214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE47B6DF22E792A600960214 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DE47B6ED22E7945F00960214 /* LightMQTT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightMQTT.swift; sourceTree = "<group>"; };
+		DE47B6EF22E794AB00960214 /* MQTTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTManager.swift; sourceTree = "<group>"; };
 		DE7B3F2E20814D3800548E87 /* MyHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE7B3F3120814D3800548E87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE7B3F3320814D3800548E87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -33,11 +98,25 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE47B6CE22E792A500960214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE7B3F2B20814D3800548E87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DEDBE3D9208162A000C9046B /* Pods_MyHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65542184FE52CA7EF52B3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,10 +133,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DE47B6C622E792A400960214 /* MyHomeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				DE47B6C722E792A400960214 /* Interface.storyboard */,
+				DE47B6CA22E792A500960214 /* Assets.xcassets */,
+				DE47B6CC22E792A500960214 /* Info.plist */,
+			);
+			path = MyHomeWatch;
+			sourceTree = "<group>";
+		};
+		DE47B6D522E792A500960214 /* MyHomeWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE47B6D622E792A500960214 /* InterfaceController.swift */,
+				DE47B6D822E792A500960214 /* ExtensionDelegate.swift */,
+				DE47B6DA22E792A500960214 /* NotificationController.swift */,
+				DE47B6DC22E792A600960214 /* Assets.xcassets */,
+				DE47B6DE22E792A600960214 /* Info.plist */,
+				DE47B6DF22E792A600960214 /* PushNotificationPayload.apns */,
+				DE47B6ED22E7945F00960214 /* LightMQTT.swift */,
+				DE47B6EF22E794AB00960214 /* MQTTManager.swift */,
+			);
+			path = "MyHomeWatch Extension";
+			sourceTree = "<group>";
+		};
 		DE7B3F2520814D3700548E87 = {
 			isa = PBXGroup;
 			children = (
 				DE7B3F3020814D3800548E87 /* MyHome */,
+				DE47B6C622E792A400960214 /* MyHomeWatch */,
+				DE47B6D522E792A500960214 /* MyHomeWatch Extension */,
 				DE7B3F2F20814D3800548E87 /* Products */,
 				F44CF31B22D92BE51BE5FB6E /* Pods */,
 				31AE37DFF4A0A6D352873F2D /* Frameworks */,
@@ -68,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				DE7B3F2E20814D3800548E87 /* MyHome.app */,
+				DE47B6C522E792A300960214 /* MyHomeWatch.app */,
+				DE47B6D122E792A500960214 /* MyHomeWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +206,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DE47B6C422E792A300960214 /* MyHomeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE47B6E922E792A600960214 /* Build configuration list for PBXNativeTarget "MyHomeWatch" */;
+			buildPhases = (
+				DE47B6C322E792A300960214 /* Resources */,
+				DE47B6E822E792A600960214 /* Embed App Extensions */,
+				E65542184FE52CA7EF52B3DD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE47B6D422E792A500960214 /* PBXTargetDependency */,
+			);
+			name = MyHomeWatch;
+			productName = MyHomeWatch;
+			productReference = DE47B6C522E792A300960214 /* MyHomeWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DE47B6D022E792A500960214 /* MyHomeWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE47B6E722E792A600960214 /* Build configuration list for PBXNativeTarget "MyHomeWatch Extension" */;
+			buildPhases = (
+				DE47B6CD22E792A500960214 /* Sources */,
+				DE47B6CE22E792A500960214 /* Frameworks */,
+				DE47B6CF22E792A500960214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MyHomeWatch Extension";
+			productName = "MyHomeWatch Extension";
+			productReference = DE47B6D122E792A500960214 /* MyHomeWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		DE7B3F2D20814D3800548E87 /* MyHome */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE7B3F4020814D3800548E87 /* Build configuration list for PBXNativeTarget "MyHome" */;
@@ -107,10 +250,12 @@
 				DE7B3F2B20814D3800548E87 /* Frameworks */,
 				DE7B3F2C20814D3800548E87 /* Resources */,
 				CA146AEEC9A6079FC8D19F0D /* [CP] Embed Pods Frameworks */,
+				DE47B6EA22E792A600960214 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE47B6E122E792A600960214 /* PBXTargetDependency */,
 			);
 			name = MyHome;
 			productName = MyHome;
@@ -123,10 +268,19 @@
 		DE7B3F2620814D3700548E87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0920;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Filip Sardjoski";
 				TargetAttributes = {
+					DE47B6C422E792A300960214 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+						ProvisioningStyle = Manual;
+					};
+					DE47B6D022E792A500960214 = {
+						CreatedOnToolsVersion = 10.3;
+						ProvisioningStyle = Manual;
+					};
 					DE7B3F2D20814D3800548E87 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
@@ -147,11 +301,30 @@
 			projectRoot = "";
 			targets = (
 				DE7B3F2D20814D3800548E87 /* MyHome */,
+				DE47B6C422E792A300960214 /* MyHomeWatch */,
+				DE47B6D022E792A500960214 /* MyHomeWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DE47B6C322E792A300960214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE47B6CB22E792A500960214 /* Assets.xcassets in Resources */,
+				DE47B6C922E792A400960214 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE47B6CF22E792A500960214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE47B6DD22E792A600960214 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE7B3F2C20814D3800548E87 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +379,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DE47B6CD22E792A500960214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE47B6EE22E7945F00960214 /* LightMQTT.swift in Sources */,
+				DE47B6DB22E792A500960214 /* NotificationController.swift in Sources */,
+				DE47B6D922E792A500960214 /* ExtensionDelegate.swift in Sources */,
+				DE47B6D722E792A500960214 /* InterfaceController.swift in Sources */,
+				DE47B6F022E794AB00960214 /* MQTTManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DE7B3F2A20814D3800548E87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,7 +403,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DE47B6D422E792A500960214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE47B6D022E792A500960214 /* MyHomeWatch Extension */;
+			targetProxy = DE47B6D322E792A500960214 /* PBXContainerItemProxy */;
+		};
+		DE47B6E122E792A600960214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE47B6C422E792A300960214 /* MyHomeWatch */;
+			targetProxy = DE47B6E022E792A600960214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		DE47B6C722E792A400960214 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE47B6C822E792A400960214 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		DE7B3F3520814D3800548E87 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -238,6 +444,113 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DE47B6E322E792A600960214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = A83HL2KEAE;
+				IBSC_MODULE = MyHomeWatch_Extension;
+				INFOPLIST_FILE = MyHomeWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netcetera.-.";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NetceteraInHouseGeneric;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyHomeWatch/MyHomeWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Debug;
+		};
+		DE47B6E422E792A600960214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = A83HL2KEAE;
+				IBSC_MODULE = MyHomeWatch_Extension;
+				INFOPLIST_FILE = MyHomeWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netcetera.-.";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NetceteraInHouseGeneric;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyHomeWatch/MyHomeWatch-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Release;
+		};
+		DE47B6E522E792A600960214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = A83HL2KEAE;
+				INFOPLIST_FILE = "MyHomeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netcetera.-.";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = NetceteraInHouseGeneric;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Debug;
+		};
+		DE47B6E622E792A600960214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = A83HL2KEAE;
+				INFOPLIST_FILE = "MyHomeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.netcetera.-.";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = NetceteraInHouseGeneric;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.3;
+			};
+			name = Release;
+		};
 		DE7B3F3E20814D3800548E87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -386,6 +699,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DE47B6E722E792A600960214 /* Build configuration list for PBXNativeTarget "MyHomeWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE47B6E522E792A600960214 /* Debug */,
+				DE47B6E622E792A600960214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE47B6E922E792A600960214 /* Build configuration list for PBXNativeTarget "MyHomeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE47B6E322E792A600960214 /* Debug */,
+				DE47B6E422E792A600960214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DE7B3F2920814D3700548E87 /* Build configuration list for PBXProject "MyHome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

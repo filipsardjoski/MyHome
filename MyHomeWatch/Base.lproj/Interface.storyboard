@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="MyHomeWatch" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Wall" id="oFE-Ax-9yp">
+                            <connections>
+                                <action selector="toggleWall" destination="AgC-eL-Hgc" id="HjF-dA-Eif"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Garden" id="FCf-sJ-9yz">
+                            <connections>
+                                <action selector="toggleGarden" destination="AgC-eL-Hgc" id="PGf-SS-iIM"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="242" y="417"/>
+        </scene>
+    </scenes>
+</document>
