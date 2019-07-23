@@ -172,11 +172,8 @@ final class LightMQTT {
     private func openStreams(completion: @escaping (((input: InputStream, output: OutputStream)?) -> ())) {
 //        var inputStream: InputStream?
 //        var outputStream: OutputStream?
-//
-//        Stream.getStreamsToHost(withName: host,
-//                                port: options.concretePort,
-//                                inputStream: &inputStream,
-//                                outputStream: &outputStream)
+//        
+//        Stream.getStreamsToHost(withName: host, port: options.concretePort, inputStream: &inputStream, outputStream: &outputStream)
 //
 //        guard let input = inputStream, let output = outputStream else {
 //            completion(nil)
